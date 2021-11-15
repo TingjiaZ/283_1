@@ -3,14 +3,14 @@
 1. Download VMware fusion/workstation from the VMware website and configure the local enviornment of computer.
 2. create a vitural machine and download the file "makefile" and "cmpe283-1.c".
 3. Implement code in cmpe283-1.c
-a. define the controls
+4. define the controls
   #define IA32_VMX_PINBASED_CTLS 0x481
   #define IA32_VMX_ENTRY_CTLS 0x484
   #define IA32_VMX_EXIT_CTLS 0x483
   #define IA32_VMX_PROCBASED_CTLS 0x482
   #define IA32_VMX_PROCBASED_CTLS2 0x48B
-b. define pinbased capabilities
-c. define procbased capabilities
+5. define pinbased capabilities
+6. define procbased capabilities
   struct capability_info procbased[21] =
   {
     { 2, " Interrupt-window exiting" },
@@ -35,7 +35,7 @@ c. define procbased capabilities
     { 30, "PAUSE exiting" },
     { 31, "Activate secondary controls" }
   }; 
-  d. define secondary procbased capabilities
+  7. define secondary procbased capabilities
     struct capability_info secondary_procbased[23] =
   {
     { 0, " Virtualize APIC accesses" },
@@ -62,6 +62,6 @@ c. define procbased capabilities
     { 22, "Mode-based execution control for EPT" },
     { 25, "Use TSC scaling" }
   }; 
-  e. define entry controls capabilities
-  f. define exit controls capabilities
- 4. make clean
+ 8. define entry controls capabilities
+ 9. define exit controls capabilities
+ 10. make clean
