@@ -64,4 +64,4 @@
   }; 
  8. define entry controls capabilities
  9. define exit controls capabilities
- 10. make clean
+  10. make clean
